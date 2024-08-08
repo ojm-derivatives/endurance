@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74953609-d274-43a1-af57-fef0017529bc" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/Endurance.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules_run_status.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms/RMS_M2M.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms/RMS_Reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms/test1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms/RMS_GenerateExpiryCodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms/RMS_GenerateExpiryCodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms/RMS_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms/RMS_Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms/RMS_Position_Order_Matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms/RMS_Position_Order_Matching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/classes/config/ProdBaseConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/classes/config/ProdBaseConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/decorators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/decorators/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/projects/kite/kite_access/KiteAccess.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/projects/kite/kite_access/KiteAccess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/projects/kite/rms/config/RMSConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/projects/kite/rms/config/RMSConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/prod/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OmJaiPyLib/com/telegram/SendMessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OmJaiPyLib/com/telegram/SendMessage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OmJaiPyLib" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
@@ -38,18 +49,96 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OJAS/OmJaiPyLib&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.RMS_M2M.executor": "Run",
+    "Python.RMS_Main.executor": "Debug",
+    "Python.generate_totp_one_time.executor": "Run",
+    "Python.main.executor": "Debug",
+    "Python.run_kite_access.executor": "Run",
+    "Python.test (1).executor": "Debug",
+    "Python.test.executor": "Run",
+    "Python.test1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/OJAS/Endurance/rms",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OJAS\Endurance\rms" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="RMS_M2M" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Endurance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rms/RMS_M2M.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RMS_Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Endurance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rms/RMS_Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_totp_one_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="KiteAccess" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../KiteAccess/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../KiteAccess/src/generate_totp_one_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Endurance" />
       <option name="ENV_FILES" value="" />
@@ -72,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Endurance" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,11 +170,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rms" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rms/test.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.generate_totp_one_time" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.RMS_M2M" />
+        <item itemvalue="Python.RMS_Main" />
       </list>
     </recent_temporary>
   </component>
@@ -125,11 +217,93 @@
       <option name="project" value="LOCAL" />
       <updated>1722978370535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1722981368121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722981368121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../OmJaiPyLib/com/prod/util/__init__.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../OmJaiPyLib/com/prod/projects/kite/kite_access/KiteAccess.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_M2M.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_M2M.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_Position_Order_Matching.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_Main.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_M2M.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/test.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../OmJaiPyLib/com/prod/decorators/__init__.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rms/RMS_Main.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="id(rms.rms_m2m_obj.positions_net_df)" language="Python" />
+        <watch expression="os.getenv('PROJECT_NAME')" language="Python" />
+        <watch expression="os.getenv('PROJECT_NAME')" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

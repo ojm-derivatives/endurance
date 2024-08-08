@@ -4,16 +4,15 @@ from datetime import datetime
 from com.supabase.tables import ExpiryCode
 from com.decorators import check_holiday
 from com.prod.decorators import exception_handler_decorator_factory, exception_handler_decorator
-from com.prod.projects.kite.rms import RMSConfig
 from rms import RMS_Main
 
 
 class RMS_GenerateExpiryCodes(RMS_Main):
-    def __init__(self, project_name, module_name='RMS'):
+    def __init__(self, project_name, module_name='RMS_Generate_Expiry_codes'):
         super().__init__(project_name=project_name, module_name=module_name)
         self.test_download_passed = False
 
-        self.logger.info(f'Initiated the {project_name} - {module_name} - {self.__class__.__name__}')
+        self.logger.info(f'Initiated the {project_name}-{module_name}-{self.__class__.__name__}')
 
     def check_truedata_download_test(self):
         try:
@@ -102,13 +101,13 @@ class RMS_GenerateExpiryCodes(RMS_Main):
             else:
                 self.send_message.send_critical('TEST DOWNLOADING - FAILED')
 
-    def set_expiry_codes_to_config_file(self):
+    def set_expiry_codes_to_config_file(self, module_name='RMS_Expiry_Codes'):
         try:
             self.test_download_passed = False
             print(
                 f"\n*******************************************************************************************\nSetting the Expiry Code of TD to {self.expiry_code_td_nf} & {self.expiry_code_td_bnf} in config.ini")
-            self.config.set(self.module_name, "expiry_code_td_nf", self.expiry_code_td_nf)
-            self.config.set(self.module_name, "expiry_code_td_bnf", self.expiry_code_td_bnf)
+            self.config.set(module_name, "expiry_code_td_nf", self.expiry_code_td_nf)
+            self.config.set(module_name, "expiry_code_td_bnf", self.expiry_code_td_bnf)
             with open(self.config_filename_with_path, 'w') as file:
                 self.config.write(file)
         except Exception as e:
@@ -129,8 +128,8 @@ class RMS_GenerateExpiryCodes(RMS_Main):
             self.test_download_passed = False
             print(
                 f"\n*******************************************************************************************\nSetting the Expiry Code of KITE to NF:{self.expiry_code_kite_nf} & BNF:{self.expiry_code_kite_bnf} in config.ini")
-            self.config.set(self.module_name, "expiry_code_kite_nf", self.expiry_code_kite_nf)
-            self.config.set(self.module_name, "expiry_code_kite_bnf", self.expiry_code_kite_bnf)
+            self.config.set(module_name, "expiry_code_kite_nf", self.expiry_code_kite_nf)
+            self.config.set(module_name, "expiry_code_kite_bnf", self.expiry_code_kite_bnf)
             with open(self.config_filename_with_path, 'w') as file:
                 self.config.write(file)
         except Exception as e:
@@ -243,13 +242,3 @@ class RMS_GenerateExpiryCodes(RMS_Main):
         self.set_expiry_codes_to_config_file()
         self.update_expiry_mapping_file()
         self.update_expiry_codes_in_db()
-
-
-@check_holiday(module_name='RMS-GenerateExpiryCodes')
-def main():
-    rms_manage_expiry_codes = RMS_GenerateExpiryCodes(project_name='RMS', module_name='Generate_Expiry_codes')
-    rms_manage_expiry_codes.check_truedata_download_test()
-    rms_manage_expiry_codes.generate_and_check_expiry_codes()
-    rms_manage_expiry_codes.set_expiry_codes_to_config_file()
-    rms_manage_expiry_codes.update_expiry_mapping_file()
-    rms_manage_expiry_codes.update_expiry_codes_in_db()
