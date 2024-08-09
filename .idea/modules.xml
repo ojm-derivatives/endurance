@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Endurance.iml" filepath="$PROJECT_DIR$/.idea/Endurance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../OmJaiPyLib/.idea/OmJaiPyLib.iml" filepath="$PROJECT_DIR$/../OmJaiPyLib/.idea/OmJaiPyLib.iml" />
+    </modules>
+  </component>
+</project>
